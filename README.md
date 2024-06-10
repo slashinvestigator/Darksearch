@@ -1,6 +1,5 @@
-# OnionSearch
-👋 Hi there! For any professional inquiries or collaborations, please reach out to me at:
-megadose@protonmail.com
+# DarkSearch
+👋 Hi there!
 
 📧 Preferably, use your professional email for correspondence. Let's keep it short and sweet, and all in English!
 
@@ -8,17 +7,7 @@ megadose@protonmail.com
 #### For BTC Donations : 1FHDM49QfZX6pJmhjLE5tB2K6CaTLMZpXZ
 ## Educational purposes only
 
-OnionSearch is a Python3 script that scrapes urls on different ".onion" search engines.
-
-![](https://files.catbox.moe/vguy1e.png)
-
-### Demo
-
-![](https://github.com/megadose/gif-demo/raw/master/onionsearch.gif)
-
-
-## 💡 Prerequisite
-[Python 3](https://www.python.org/download/releases/3.0/)
+Dark Search is a python based tool !!
 
 ## 📚 Currently supported Search engines
 - ahmia
@@ -41,13 +30,13 @@ OnionSearch is a Python3 script that scrapes urls on different ".onion" search e
 ## 🛠️ Installation
 ### With PyPI
 
-```pip3 install onionsearch```
+```pip3 install darksearch```
 
 ### With Github
 
 ```bash
-git clone https://github.com/megadose/OnionSearch.git
-cd OnionSearch/
+git clone https://github.com/slashinvestigator/darksearch.git
+cd darkSearch/
 python3 setup.py install
 ```
 
@@ -56,7 +45,7 @@ python3 setup.py install
 
 Help:
 ```
-usage: onionsearch [-h] [--proxy PROXY] [--output OUTPUT]
+usage: darksearch [-h] [--proxy PROXY] [--output OUTPUT]
                   [--continuous_write CONTINUOUS_WRITE] [--limit LIMIT]
                   [--engines [ENGINES [ENGINES ...]]]
                   [--exclude [EXCLUDE [EXCLUDE ...]]]
@@ -103,22 +92,22 @@ Please also note that the progress bars may not be properly displayed when `mp_u
 
 To request all the engines for the word "computer":
 ```
-onionsearch "computer"
+darksearch "computer"
 ```
 
-To request all the engines excepted "Ahmia" and "Candle" for the word "computer":
+To request all the engines excepted "Ahmia" and "Candle" for the word "phone":
 ```
-onionsearch "computer" --exclude ahmia candle
+darksearch "phone" --exclude ahmia candle
 ```
 
 To request only "Tor66", "DeepLink" and "Phobos" for the word "computer":
 ```
-onionsearch "computer" --engines tor66 deeplink phobos
+darksearch "computer" --engines tor66 deeplink phobos
 ```
 
 The same as previously but limiting to 3 the number of pages to load per engine:
 ```
-onionsearch "computer" --engines tor66 deeplink phobos --limit 3
+darksearch "computer" --engines tor66 deeplink phobos --limit 3
 ```
 
 Please kindly note that the list of supported engines (and their keys) is given in the script help (-h).
